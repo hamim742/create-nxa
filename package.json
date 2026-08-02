@@ -1,8 +1,13 @@
 {
   "name": "create-nxa",
-  "version": "1.0.2",
-  "description": "A CLI tool to bootstrap a new Next.js project with a modern starter template.",
+  "version": "2.0.0",
+  "description": "A CLI tool to bootstrap a new Next.js project with a modern starter template featuring Tailwind CSS v4, Redux Toolkit, and built-in Authentication.",
   "main": "bin/cli.js",
+  "scripts": {
+    "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish"
+  },
   "bin": {
     "create-nxa": "bin/cli.js"
   },
@@ -24,13 +29,21 @@
     "node": ">=16.17.0"
   },
   "keywords": [
+    "create-nxa",
     "nextjs",
+    "nextjs-boilerplate",
+    "nextjs-starter",
+    "nextjs-template",
     "react",
     "redux-toolkit",
     "tailwind-css",
+    "tailwindcss-v4",
     "boilerplate",
     "starter-template",
-    "cli"
+    "auth-template",
+    "dashboard-template",
+    "cli",
+    "npx-create"
   ],
   "author": "Hamim",
   "license": "MIT"
