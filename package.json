@@ -1,6 +1,6 @@
 {
   "name": "create-nxa",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A CLI tool to bootstrap a new Next.js project with a modern starter template featuring Tailwind CSS v4, Redux Toolkit, and built-in Authentication.",
   "main": "bin/cli.js",
   "scripts": {

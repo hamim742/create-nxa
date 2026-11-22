@@ -11,6 +11,15 @@ Setting up a production-ready Next.js application with Tailwind CSS, Redux Toolk
 
 ---
 
+## 🆕 What's New in v2.1.0
+
+*   **Professional landing page**: A polished, responsive home page (hero, features, tech stack, project structure) now ships by default, replacing the stock Next.js starter screen.
+*   **Navbar & Footer**: Ready-made shared components with a dark/light theme toggle.
+*   **Working dark mode**: Theme switching via `next-themes` now works with Tailwind's class-based `dark:` variant.
+*   **Cleaner template**: Removed unused default Next.js assets and updated SEO metadata.
+
+---
+
 ## ✨ Features Included
 
 *   **Modern Framework**: Next.js 16 (App Router) with Turbopack support for ultra-fast local compilation.
@@ -19,6 +28,7 @@ Setting up a production-ready Next.js application with Tailwind CSS, Redux Toolk
 *   **Authentication Flow**: Built-in `AuthContext` provider and custom React hooks for user authentication (Login, Register, Logout, and persistent session state).
 *   **Utility Hooks & Libs**: Preloaded with essential utilities like `formatDate`, `useDebounce`, `useLocalStorage`, `tailwind-merge`, and `clsx`.
 *   **Linting & Code Style**: Pre-configured ESLint and Prettier for clean, consistent code.
+*   **Default Landing Page**: Modern, professional home page with navbar, footer and theme toggle — ready to customize.
 *   **Ready-to-use App Layouts**: Includes pre-designed Authentication Layout, responsive Admin Dashboard Layout with sidebar, and general Public Layouts.
 
 ---
@@ -36,6 +46,12 @@ For example:
 npx create-nxa my-dashboard-app
 ```
 
+Then start the dev server and open `http://localhost:3000` to see your new landing page:
+```bash
+cd my-dashboard-app
+npm run dev
+```
+
 ---
 
 ## 📁 Directory Structure
@@ -46,7 +62,7 @@ my-app/
 │   ├── app/
 │   │   ├── (authLayout)/          # Login & Register routes
 │   │   ├── (dashboardLayout)/     # Admin Dashboard overview
-│   │   └── (commonLayout)/        # Public landing routes
+│   │   └── (commonLayout)/        # Landing page (Navbar + Footer)
 │   ├── components/                # Shared layout & UI components
 │   ├── constants/                 # Route paths and app-wide constants
 │   ├── context/                   # AuthContext providers
